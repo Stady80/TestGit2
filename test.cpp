@@ -8,8 +8,13 @@ int sum(int a, int b)
     return a+b;
 }
 
+int inc(int a)
+{
+    return ++a;
+}
+
 int main()
 {
-  cout << sum(2,3);
+  cout << inc(2);
   getch();
 }
