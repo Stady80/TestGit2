@@ -23,7 +23,9 @@ int main()
   mvaddch(3,6,219);
   mvaddch(3,7,219);
   mvaddch(3,8,219);
+    mvaddch(3,8,219);
   refresh();
   getchar();
+    mvaddch(3,8,219);
   endwin();
 }
