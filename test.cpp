@@ -16,5 +16,6 @@ int main()
     mvaddch(3,8,219);
   refresh();
   getchar();
+    getchar();
   endwin();
 }
