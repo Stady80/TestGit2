@@ -1,9 +1,14 @@
 #include <iostream> 
-#include <conio.h> 
+
+#include <ncurses/ncurses.h>
 
 using namespace std;
 
 int main()
 {
-  getch();
+  initscr();
+  mvaddch(3,3,219);
+  refresh();
+  getchar();
+  endwin();
 }
