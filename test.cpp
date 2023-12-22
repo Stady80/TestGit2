@@ -1,5 +1,6 @@
 #include <iostream> 
-#include <conio.h> 
+
+#include <ncurses/ncurses.h>
 
 using namespace std;
 
@@ -15,6 +16,14 @@ int inc(int a)
 
 int main()
 {
-  cout << inc(2);
-  getch();
+  initscr();
+  mvaddch(3,3,219);
+  mvaddch(3,4,219);
+  mvaddch(3,5,219);
+  mvaddch(3,6,219);
+  mvaddch(3,7,219);
+  mvaddch(3,8,219);
+  refresh();
+  getchar();
+  endwin();
 }
